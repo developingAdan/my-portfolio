@@ -1,0 +1,131 @@
+
+* {
+    box-sizing: border-box;
+    border: none !important;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ACTUALLY MY CSS */
+
+.headerrr {
+    background-color: #333333;
+    height: 8vh;
+    display: flex;
+    color: white;
+}
+
+header {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+header > h3 {
+    border: 1px solid green;
+
+}
+
+body {
+    border: 2px solid black;
+}
+
+.mainDiv {
+    display: flex;
+    border: 2px, solid, black;
+    padding-top: 16px;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+}
+
+.mainDiv > main {
+    border: 3px solid red;
+    background-color: #E6EAE9;
+    width: 60%;
+    padding: 4px 16px 0 16px;
+
+    border-radius: 15px;
+}
+
+main > a > * {
+    /* border: 2px solid red !important; */
+
+    margin-top: 16px;
+}
+
+main > a > section {
+    border: 1px solid green;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+main > a > section > h2 {
+    border: 1px solid purple;
+    width: 100%;
+    margin: 0 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: black;
+}

@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    /* border: none !important; */
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS */
+
+header {
+    height: 6vh;
+    /* border: 2px solid black; */
+    background-color: #333333;
+}
+
+header > nav {
+    border: 2px solid lightgreen;
+    display: flex;
+    height: 100%;
+}
+
+header > nav > .header-imageDiv {
+    border: 2px solid brown;
+    width: 10%;
+}
+
+header > nav > ul {
+    display: flex; 
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+    border: 2px solid lightcoral;
+}
+
+header > nav > ul li {
+    border: 2px solid black;
+    display: inline-block;
+    margin-right: 100px;
+    color: white;
+}
+
+/* configuring title and small paragraph under here */
+main {
+    border: 1px solid red;
+    height: 80vh;
+    display: flex;
+}
+
+main > section {
+    width: 50%;
+    border: 3px solid red;
+    background-color: #1a1a1a;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello-div {
+    background-color: #da555c;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid green;
+    width: 60%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.hello-div > h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.aboutMe-div {
+    border: 2px solid purple;
+    width: 50%;
+    padding-left: 48px;
+    margin-top: 20px;
+
+}
+
+.first-para {
+    border: 2px solid red;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+/* .first-para + p {
+    border: 2px solid lightgreen;
+    font-sipx;
+    width: 45%;
+} */
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    border: 3px solid green;
+}
+
+/* configuring image and image div  under here  */
+
+main > section + section {
+    border: 3px solid purple;
+    display: flex;
+    align-items: center;
+}
+
+main > section + section > div > img {
+    width: 60%;
+}
+
+/* configuring projects section under here */
+
+.h2-class {
+    border: 2px solid blue;
+    height: 100px;
+    display: flex;
+    background-color: #333333;
+    color: white;
+}
+
+.h2-title {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid green;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.projects-sec {
+    border: 2px solid blue;
+    background-color: #333333;
+    color: white;
+    
+}
+
+.projects-sec > div {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-sec > div > article {
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+}
+
+.proj-img {
+    border: 2px solid pink;
+    width: 33.3333%;
+}
+
+.proj-img > img {
+    width: 60%;
+    border: 2px solid black;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 20px;
+}
+
+.proj-img + h3 {
+    border: 2px solid salmon;
+    width: 33.3333%;
+    font-size: 28px;
+    font-family: 'Poppins';
+}
+
+
+
+.proj-img + h3 + p {
+    border: 2px solid lightgreen;
+    width: 33.3333%;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > section {
+        width: 100%;
+        height: 70%;
+    }
+
+    main > section + section > div > img {
+        width: 40%;
+    }
+}
