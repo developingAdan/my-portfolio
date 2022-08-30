@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: none !important;
+    /* border: none !important; */
   }
   
   /* Clear fix hack */
@@ -64,29 +64,29 @@ table {
 /* MY CSS */
 
 header {
-    height: 6vh;
+    height: 8vh;
     /* border: 2px solid black; */
     background-color: #333333;
 }
 
 header > nav {
-    border: 2px solid lightgreen;
+    border: 2px solid red;
     display: flex;
     height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
 header > nav > .header-imageDiv {
-    border: 2px solid brown;
+    border: 2px solid green;
     width: 10%;
 }
 
 header > nav > ul {
     display: flex; 
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     width: 90%;
-    border: 2px solid lightcoral;
+    border: 2px solid yellow;
 }
 
 header > nav > ul li {
@@ -251,6 +251,31 @@ strong {
 /* MEDIA QUERIES */
 
 @media (max-width: 600px) {
+
+    
+    header > nav > ul {
+        width: 100%;
+        border: 2px solid lightcoral;
+    }
+
+    header > nav > ul li {
+        border: 2px solid black;
+        display: inline-block;
+        color: white;
+        margin-left: 32px;
+    }
+
+    .hello-div {
+        height: 25%;
+    }
+
+    .hello-div > h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 56px;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -262,6 +287,39 @@ strong {
     }
 
     main > section + section > div > img {
-        width: 40%;
+        width: 55%;
+    }
+
+    /* .projects-sec {
+        /* display: flex; */
+        /* flex-direction: column; */
+    /* } */ 
+
+    .projects-sec > a > article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proj-img {
+        width: 75%;
+        text-align: center;
+    }
+
+    /* we could use text-align: center to center things also.  */
+
+    .proj-img > img {
+        border: 2px solid yellow;
+        padding-right: 16px;
+        border-radius: 0px;
+    }
+
+    .proj-img + h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .proj-img + h3 + p {
+        width: 60%;
+        text-align: center;
     }
 }
