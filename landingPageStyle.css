@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: none !important; */
+    border: none !important;
   }
   
   /* Clear fix hack */
@@ -73,6 +73,7 @@ header > nav {
     border: 2px solid lightgreen;
     display: flex;
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 header > nav > .header-imageDiv {
@@ -186,7 +187,7 @@ main > section + section > div > img {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     border: 2px solid green;
-    padding-left: 16px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
 }
@@ -195,24 +196,28 @@ main > section + section > div > img {
     border: 2px solid blue;
     background-color: #333333;
     color: white;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.projects-sec > div {
+.projects-sec > a {
     border: 2px solid red;
-    display: flex;
-    flex-direction: column;
+
 }
 
-.projects-sec > div > article {
-    border: 2px solid green;
+.projects-sec > a > article {
+    border: 3px solid green;
     display: flex;
     align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 .proj-img {
     border: 2px solid pink;
     width: 33.3333%;
+    padding-bottom: 16px;
 }
 
 .proj-img > img {
