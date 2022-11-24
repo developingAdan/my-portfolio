@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: none !important;
+    /* border: none !important; */
   }
   
   /* Clear fix hack */
@@ -158,18 +158,20 @@ main > section {
     display: flex;
     justify-content: center;
     border: 3px solid green;
+    width: 100%;
 }
 
 /* configuring image and image div  under here  */
 
 main > section + section {
     border: 3px solid purple;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* width: 50%; */
 }
 
 main > section + section > div > img {
-    width: 60%;
+    width: 40%;
 }
 
 /* configuring projects section under here */
@@ -250,6 +252,12 @@ strong {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1150px) {
+    .image-div > img{
+        width: 15%;
+    }
+}
+
 @media (max-width: 600px) {
 
     
@@ -285,6 +293,7 @@ strong {
 
     .image-div > img {
         border-radius: 16px;
+        width: 20%;
     }
 
     main {
